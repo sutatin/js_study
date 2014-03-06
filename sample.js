@@ -1,15 +1,18 @@
 //init
- console.log("start");
+ log("start");
 
 //bind
- $("#button_1").click(function(){
-	console.log("hoge")});
+ $("#button_1").click(function(){log("hoge")});
 
- $("#button_2").click(bindButton2);
+ $("#button_2").click(button2Action);
 
 //end
-	console.log("end");
+	log("end");
 
 //functions
-function bindButton2(){
-	console.log("hoge2")}
+function button2Action(){
+	log("hoge2")}
+
+function log (logmessage) {
+	console.log(logmessage);
+}
