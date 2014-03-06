@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang = "ja">
+<head>
+	<meta charset="UTF-8">
+	<title>js_study</title>
+	<!--http://は消したほうが良い
+	http://dqn.sakusakutto.jp/2013/05/script_src_http.html
+	ただしローカルでテスト中はエラー起こした。ブクマからパスの問題でローカルを読むからだと予想
+
+	scriptタグは<script ** />だとFFではエラーだった。
+	何の属性ならOKで何の属性なら駄目なんだろう・・・。
+	 -->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.5.1.min.js"></script>
+</head>
+<body>
+<input id="button_1" type="button" value="テスト" />
+<input id="button_2" type="button" value="テスト2" />
+
+	<!--DOMにアクセスするjsは最後にしないと意図通りに動かないので注意。
+		bindでエラーするとコンソールログも残らない。-->
+<script src="sample.js"></script>
+</body>
+</html>
